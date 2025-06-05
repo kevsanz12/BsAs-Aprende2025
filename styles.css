@@ -1,0 +1,189 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.icon-cart {
+  width: 40px;
+  height: 40px;
+  color: #000;
+}
+
+.container-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all .5s;
+}
+
+.info-product h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.precio {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+/* Nav */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  background-color: #eee;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Reseñas */
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.resenia {
+  background: #fafafa;
+  border-left: 5px solid #ccc;
+  padding: 15px;
+  font-style: italic;
+}
+
+/* Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #333;
+}
+
+/* Responsive Contacto */
+@media (max-width: 768px) {
+  .container-items {
+    grid-template-columns: 1fr;
+  }
+  form {
+    padding: 10px;
+  }
+}
+
+/* Scroll suave */
+html {
+scroll-behavior: smooth;
+}
+
+/* Nav hover */
+nav a:hover {
+color: #000;
+text-decoration: underline;
+}
+
+/* Reseña corregido (con ñ) */
+.reseña {
+background: #fafafa;
+border-left: 5px solid #ccc;
+padding: 15px;
+font-style: italic;
+}
+
+/* Accesibilidad botón */
+button:focus {
+outline: 2px solid #000;
+}

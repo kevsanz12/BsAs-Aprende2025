@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANTEZ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>Tienda e-commerse </h1>
+    <div class="container-icon">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           class="icon-cart">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 
+              1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 
+              1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 
+              5.513 7.5h12.974c.576 0 1.059.435 1.119 
+              1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 
+              .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 
+              1-.75 0 .375.375 0 0 1 .75 0Z"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Menú de navegacion corregido -->
+  <nav>
+    <ul>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seccion de productos -->
+  <section id="productos">
+    <main class="container-items">
+      <div class="item">
+        <figure>
+          <img src="https://acdn-us.mitiendanube.com/stores/005/533/728/products/167-a184c31d4d034337db17416165945486-480-0.jpg" alt="producto">
+        </figure>
+        <div class="info-product">
+          <h2>Oversize test 1</h2>
+          <p class="precio">$15000</p>
+          <button>Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <figure>
+          <img src="https://http2.mlstatic.com/D_936008-MLA82982290489_032025-O.jpg" alt="producto">
+        </figure>
+        <div class="info-product">
+          <h2>Oversize test 2</h2>
+          <p class="precio">$15000</p>
+          <button>Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <figure>
+          <img src="https://jc-moda.com/wp-content/uploads/2023/03/remera-Over-local-People-4.jpg" alt="producto">
+        </figure>
+        <div class="info-product">
+          <h2>Oversize test 3</h2>
+          <p class="precio">$15000</p>
+          <button>Añadir al carrito</button>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- Seccion de reseñas -->
+  <section id="reseñas">
+    <h2>Reseñas</h2>
+    <div class="grid-reseñas">
+      <div class="reseña">Cliente X: Muy buena calidad y precio</div>
+      <div class="reseña">Cliente A: Entrega rápida y en forma</div>
+      <div class="reseña">Cliente C: Recomendado 100%</div>
+    </div>
+  </section>
+
+  <!-- Seccion de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/movwvpqn" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+    <!-- Seccion de video -->
+    <section id="video">
+        <h2>Video Promocional</h2>
+        <iframe width="100%" height="315" 
+                src="https://www.youtube.com/embed/9sTe71_YwXE"
+                title="Video de SANTEZ" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+      </section>
+
+  <!-- Pie de pagina -->
+  <footer>
+    <p>© 2025 SANTEZ - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
